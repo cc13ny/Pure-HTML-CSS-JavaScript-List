@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <style>
+      body {
+        height: 1000px;
+      }
+
+      header {
+        text-align: center;
+        color: white;
+        background-color: black;
+        font-family: sans-serif;;
+      }
+
+      #canvas {
+        height: 100%;
+        background-image: url(http://webneel.com/daily/sites/default/files/images/daily/04-2014/8-disney-cartoons.jpg);
+        background-repeat: no-repeat;
+        background-color: lightblue;
+
+      }
+
+      #content {
+        width: 50%;
+        margin: auto;
+        border: 1px solid red;
+        background-color: lightpink;
+        color: black;
+        font-family: sans-serif;
+      }
+      #grid {
+        border: 1px solid blue;
+        /*text-align: left;*/
+        /*background-color: purple;*/
+        /*margin: 0;*/
+        background-image: url(http://tandtsprinkler.com/wp-content/uploads/2013/03/lawn_landscape.jpg);
+
+      }
+      img {
+        /*margin-right: -1;*/
+        /*margin-top: 4px;*/
+        background-color: lightskyblue;
+        border: 1px solid black;
+        padding: 20px;
+        /*margin: 5px;*/
+        box-sizing: border-box;
+        width: 16.6%;
+        /*margin: 5px;*/
+        /*float: left;*/
+        vertical-align: middle;
+        /*float: left;*/
+        text-align: center;
+        /*display: inline-block;*/
+        /*clear:right;*/
+
+
+
+
+      }
+      .a1 {
+        /*text-decoration: none;*/
+        background-color: red;
+
+      }
+
+      .a2 {
+        /*text-decoration: none;*/
+        background-color: purple;
+
+      }
+      #grid::after {
+        content: "after-content";
+        clear: both;
+        display: block;
+        background-color: yellow;
+      }
+    </style>
+    <header>
+      DMK
+    </header>
+    <div id="canvas">
+      <div id="content">
+        This is the content.
+        <div id="grid">
+          <a class="a1" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm5.us.cdndm5.com/23/22674/20160428104519_130x174.jpg" alt="Cartoon">
+          </a>
+          <a class="a2" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm6.us.cdndm5.com/1/432/432_c.jpg" alt="Cartoon">
+          </a>
+          <img src="http://mhfm3.us.cdndm5.com/6/5880/20150430150920_130x174_45.jpeg" alt="Cartoon">
+          <img src="http://mhfm3.us.cdndm5.com/6/5880/20150430150920_130x174_45.jpeg" alt="Cartoon">
+          <img src="http://mhfm3.us.cdndm5.com/6/5880/20150430150920_130x174_45.jpeg" alt="Cartoon">
+          <img src="http://mhfm3.us.cdndm5.com/6/5880/20150430150920_130x174_45.jpeg" alt="Cartoon">
+          <img src="http://mhfm3.us.cdndm5.com/6/5880/20150430150920_130x174_45.jpeg" alt="Cartoon">
+          <img src="http://mhfm3.us.cdndm5.com/6/5880/20150430150920_130x174_45.jpeg" alt="Cartoon">
+          <!-- <a class="" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm5.us.cdndm5.com/23/22674/20160428104519_130x174.jpg" alt="Cartoon">
+          </a>
+
+          <a href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm3.us.cdndm5.com/6/5880/20150430150920_130x174_45.jpeg" alt="Cartoon">
+          </a>
+          <a class="" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm3.us.cdndm5.com/16/15686/20160411123736_130x174_12.jpg" alt="Cartoon">
+          </a>
+
+          <a href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm6.us.cdndm5.com/1/432/432_c.jpg" alt="Cartoon">
+          </a>
+          <a class="" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm5.us.cdndm5.com/11/10684/20150430155820_130x174_13.jpg" alt="Cartoon">
+          </a>
+
+          <a href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm6.us.cdndm5.com/10/9404/20160411125406_130x174_11.jpg" alt="Cartoon">
+          </a>
+          <a class="" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm5.us.cdndm5.com/1/79/79_c.jpg" alt="Cartoon">
+          </a>
+
+          <a href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm4.us.cdndm5.com/16/15841/20150403084244_130x174_13.jpg" alt="Cartoon">
+          </a>
+
+
+          <a class="" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm4.us.cdndm5.com/5/4831/4831_c.jpg" alt="Cartoon">
+          </a>
+
+          <a href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm4.us.cdndm5.com/3/2027/20150421084645_130x174_13.jpg" alt="Cartoon">
+          </a>
+          <a class="" href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm9.us.cdndm5.com/13/12044/20150128093053_130x174_15.jpg" alt="Cartoon">
+          </a>
+
+          <a href="http://www.dm5.com/manhua-heizidelanqiu/">
+            <img src="http://mhfm8.us.cdndm5.com/8/7756/7756_c.jpg" alt="Cartoon">
+          </a> -->
+        <div>
+
+      <div>
+    </div>
+  </body>
+</html>
