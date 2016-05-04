@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+      $(function() {
+
+      });
+    </script>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Arial";
+      }
+
+      .layer1 {
+        border: 1px solid black;
+        margin: 10px;
+      }
+
+      .layer2 {
+        border: 1px solid black;
+
+      }
+
+      header {
+        border: 1px solid black;
+        margin-bottom: 30px;
+        margin: 10px;
+      }
+
+      header h1 {
+        text-align: center;
+        color: orange;
+        border: 1px solid black;
+        width: 200px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      header p {
+        /*add text indent please*/
+        margin: auto;
+        border: 1px solid black;
+        text-indent: 20px;
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+        padding: 10px;
+      }
+
+      #comp1 {
+        height: 300px;
+        margin-bottom: 10px;
+        padding: 20px;
+        border-color: blue;
+        vertical-align: middle;
+      }
+
+      #comp2 {
+        height: 300px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-color: green;
+      }
+
+      #comp1-1 {
+        height: 240px;
+        /*margin: 10px;*/
+      }
+
+      /*div div h2 {
+        border: 1px solid green;
+        margin: 0;
+      }*/
+
+      h2, h3, p{
+        border: 1px solid green;
+      }
+
+
+      #abstract {
+
+      }
+
+      #tags {
+        margin: auto;
+        border: 5px solid pink;
+        text-align: center;
+        width: 800px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      #self-nav-title {
+        color: purple;
+        border: 1px solid blue;
+        margin: 10px;
+        text-align: center;
+      }
+
+      #self-nav {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        background-color: #f1f1f1;
+        border: 1px solid red;
+
+        position: absolute;
+        /*height: 100%;*/
+        /*overflow: auto;*/
+
+
+      }
+
+      #self-nav li a{
+        /*border-bottom: 1px solid blue;
+        text-align: center;*/
+        text-decoration: none;
+        display: block;
+        color: white;
+        padding: 8px 16px;
+        margin: 10px;
+        border: 1px solid black;
+        background-color: lightblue;
+
+      }
+
+      #self-nav li a.active{
+        background-color: orange;
+        color: white;
+        border: none;
+      }
+
+      #self-nav li a:hover:not(.active){
+        background-color: pink;
+        color: orange;
+      }
+
+      #self-nav li {
+        text-align: center;;
+        border-bottom: 1px solid blue;
+      }
+
+      #self-nav li:last-child {
+        border-bottom: none;
+      }
+
+      #nav-content {
+        /*margin-left: 210px;
+        border: 1px solid blue;
+        margin-bottom: 20px;*/
+        /*margin: 0 10% 60px 25%;*/
+        padding: 10px 30px;
+        /*height:200px;*/
+        border: 1px solid blue;
+        /*overflow: auto;*/
+        margin-left: 15%;
+        margin-right: 20%;
+        /*margin-bottom: 5%;*/
+      }
+
+      #nav-board {
+        height: 400px;
+      }
+
+      #link-board {
+        /*border: 1px solid orange;*/
+        /*padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;*/
+        padding: 10px;
+      }
+
+      .cs-class {
+        border: 1px solid black;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 5px;
+        /*text-align: center;*/
+
+      }
+
+      .cs-class h1 {
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+        /*position: absolute;*/
+
+      }
+
+    </style>
+
+    <header>
+      <h1> Practices </h1>
+      <p id="abstract" >
+        One is All. All is One.
+        This page is used for practising serveral techniques including
+        JavaScript, HTML, CSS, Bootstrap, jQuery, AngularJS.
+      </p>
+      <div id="tags">
+        <button type="button" class="btn btn-warning">JavaScript</button>
+        <button type="button" class="btn btn-secondary">HTML</button>
+        <button type="button" class="btn btn-info">CSS</button>
+        <button type="button" class="btn btn-primary">Bootsrap</button>
+        <button type="button" class="btn btn-success">jQuery</button>
+        <button type="button" class="btn btn-danger">AngularJS</button>
+      </div>
+    </header>
+    <div class="layer1" id="link-board">
+      <!-- <ul> -->
+        <div class="cs-class">
+          <h1 style="color: purple;">Bootstrap</h1>
+          <ul>
+            <li><a href="http://getbootstrap.com/components/#nav" target="_blank">Bootstrap Nav</a></li>
+            <li><a href="http://www.w3schools.com/bootstrap/bootstrap_get_started.asp" target="_blank">Bootstrap W3 School</a></li>
+            <li><a href="http://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Bootstrap Buttons</a></li>
+            <li><a href="http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp" target="_blank">Bootstrap Grid System - W3School</a></li>
+
+          </ul>
+        </div>
+        <div class="cs-class">
+          <h1 style="color: blue;">CSS</h1>
+          <ul>
+            <li><a href="http://www.w3schools.com/css/css_rwd_grid.asp" target="_blank">Response Web Design - Grid-View</a></li>
+            <li><a href="http://www.w3schools.com/css/css_navbar.asp" target="_blank">CSS Navigation Bar</a></li>
+            <li><a href="http://www.w3schools.com/css/css_text.asp" target="_blank">CSS Text</a></li>
+            <li><a href="http://www.w3schools.com/css/css_link.asp" target="_blank">CSS Styling Links</a></li>
+            <li><a href="http://www.w3schools.com/css/css3_buttons.asp" target="_blank">CSS Buttons</a></li>
+
+          </ul>
+        </div>
+        <div class="cs-class">
+          <h1>HTML</h1>
+          <ul>
+            <li><a href="http://www.w3schools.com/tags/tag_input.asp" target="_blank">HTML input Tag</a></li>
+            <li><a href="http://www.turnwall.com/series/web-development-basics" target="_blank">HTML CSS Basics</a></li>
+          </ul>
+        </div>
+        <div class="cs-class">
+          <h1 style="color: orange">JavaScript</h1>
+          <ul>
+            <li><a href="http://www.w3schools.com/js/js_htmldom_eventlistener.asp" target="_blank">JavaScript HTML DOM EventListener</a></li>
+            <li><a href="http://stackoverflow.com/questions/14135126/onclick-vs-addeventlistener" target="_blank">Onclick vs addEventListener [duplicate]</a></li>
+          </ul>
+        </div>
+        <div class="cs-class">
+          <h1 style="color: yellow">jQuery</h1>
+          <ul>
+            <li><a href="http://www.w3schools.com/jquery/jquery_dom_get.asp" target="_blank">jQuery - Get Content and Attributes</a></li>
+          </ul>
+        </div>
+        <div class="cs-class">
+          <h1 style="color: red">Testing</h1>
+          <ul>
+
+          </ul>
+        </div>
+        <div class="cs-class">
+          <h1 style="color: pink">Other</h1>
+          <ul>
+            <li><a href="" target="_blank">AngularJS</a></li>
+            <li><a href="" target="_blank">Firebase</a></li>
+            <li><a href="" target="_blank">Heroku</a></li>
+            <li><a href="https://www.glassdoor.com/index.htm" target="_blank">Glassdoor</a></li>
+            <li><a href="http://www.monster.com/" target="_blank">Monster</a></li>
+            <li><a href="http://www.meteorkitchen.com/examples" target="_blank">Meteor Kitchen</a></li>
+            <li><a href="https://www.hackerrank.com/jobs" target="_blank">HackRank Jobs</a></li>
+            <li><a href="http://www.1point3acres.com/bbs/thread-187292-2-1.html" target="_blank">No Interviews after 200 Submissions</a></li>
+            <li><a href="http://www.1point3acres.com/bbs/thread-187357-1-1.html" target="_blank">Data Scientist looking for jobs</a></li>
+            <li><a href="http://www.1point3acres.com/bbs/thread-186726-1-1.html" target="_blank">Wayfair Interviews</a></li>
+            <li><a href="https://talent.indeed.com/profile#/personal-info" target="_blank">Indeed Prime</a></li>
+            <li><a href="https://angel.co/join?utm_source=ac_redirect" target="_blank">Angel List</a></li>
+            <li>
+              <a href="http://blog.500miles.io/2016/04/20/how-they-code-programming-languages-used-by-well-known-tech-companies/" target="_blank">
+                Well-known Programming Languages in Companies
+              </a>
+            </li>
+            <li><a href="https://core.ac.uk/download/files/89/20163.pdf" target="_blank">Structured Prediction with RL</a></li>
+            <li>
+              <a href="http://www.thesitewizard.com/html-tutorial/open-links-in-new-window-or-tab.shtml" target="_blank">
+                How to Make Links Open in a New Window or Tab
+              </a>
+            </li>
+            <li>
+              <a href="http://www.zhihu.com/question/21310219/answer/20795770" target="_blank">How to write resume for interns</a>
+            </li>
+          </ul>
+        </div>
+      <!-- </ul> -->
+    </div>
+
+    <div class="layer1" id="nav-board">
+      <h2 id="self-nav-title"> Pure CSS Nav </h2>
+      <ul id="self-nav">
+        <li><a class="active" href="#data-science">Data Science</a></li>
+        <li><a href="#full-stack">Full Stack</a></li>
+        <li><a href="#data-engineering">Data Engineering</a></li>
+      </ul>
+
+      <div id="nav-content">
+        <h2>Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+
+    </div>
+
+    <div class="layer1">grid system</div>
+
+
+    <div class="layer1" id="comp1">
+      <div class="layer2" id="comp1-1">
+        <h1> hi </h1>
+        <h2> jQuery - Get Content and Attributes</h2>
+
+        <button id="btn1">Show Text</button>
+        <button id="btn2">Show HTML</button>
+      </div>
+    </div>
+    <div class="layer1" id="comp2">second</div>
+    <div class="layer1">form and input</div>
+
+  </body>
+</html>
